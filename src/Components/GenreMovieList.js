@@ -12,7 +12,7 @@ function GenreMovieList() {
         </div>
       ))}
     </div>
-  )
+  )   
 }
 
 export default GenreMovieList;
