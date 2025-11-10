@@ -4,7 +4,7 @@ import MovieCard from "./MovieCard";
 import HrMovieCard from "./HrMovieCard";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
-function MovieList({ genreId, index_ }) {
+function MovieList({ genereId, index_ }) {
   const [movieList, setMovieList] = useState([]);
   const elementRef = useRef(null);
   
@@ -13,7 +13,7 @@ function MovieList({ genreId, index_ }) {
   }, []);
 
   const getMovieByGenreId = () => {
-    GlobalApi.getMovieGenre(genreId).then((resp) => {
+    GlobalApi.getMovieGenre(genereId).then((resp) => {
       setMovieList(resp.data.results);
     });
   };
