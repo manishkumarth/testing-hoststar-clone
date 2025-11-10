@@ -12,10 +12,13 @@ function Slider() {
   }, []);
 
   const getTrend = () => {
-    GlobalApi.getTrending.then((resp) => {
+    GlobalApi.getTrending().then((resp) => {
       setMovieList(resp.data.results);
     });
   };
+
+  
+  
 
   const elementRef = useRef();
   const slideR = (element) => {
