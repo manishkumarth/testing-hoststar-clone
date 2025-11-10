@@ -9,6 +9,7 @@ function GenreMovieList() {
         <div  key={index}  className="pt-3 px-5 md:px-16 ">
           <h2 className=" text-white font-bold">{item.name}</h2>
           <MovieList genereId={item.id} index_={index}/>
+          
         </div>
       ))}
     </div>
